@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Compteur Basket</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="compteur_container">
+
+        <h1>🏀 Compteur Basket</h1>
+
+        <div class="score">
+
+            <!-- ÉQUIPE DOMICILE -->
+            <div class="equipe">
+
+                <h2>DOMICILE</h2>
+
+                <p id="score_domicile">0</p>
+
+                <div class="btn-score">
+                    <button type="button" onclick="add1Domicile()">+1</button>
+                    <button type="button" onclick="add2Domicile()">+2</button>
+                    <button type="button" onclick="add3Domicile()">+3</button>
+                </div>
+
+            </div>
+
+            <!-- ÉQUIPE EXTÉRIEUR -->
+            <div class="equipe">
+
+                <h2>EXTÉRIEUR</h2>
+
+                <p id="score_exterieur">0</p>
+
+                <div class="btn-score">
+                    <button type="button" onclick="add1Exterieur()">+1</button>
+                    <button type="button" onclick="add2Exterieur()">+2</button>
+                    <button type="button" onclick="add3Exterieur()">+3</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- BOUTON RESET -->
+        <div class="reset_btn">
+            <button type="button" class="reset" onclick="reset_score()">
+                ↻ Réinitialiser
+            </button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
